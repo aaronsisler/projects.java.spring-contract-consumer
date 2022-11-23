@@ -6,19 +6,19 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties(prefix = "producer-service")
 public class ProducerConfig {
-    private String url;
+    private String host;
     private Integer port;
 
-    public String getUrl() {
-        return url;
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
     }
 
     public Integer getPort() {
         return port;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
     public void setPort(Integer port) {

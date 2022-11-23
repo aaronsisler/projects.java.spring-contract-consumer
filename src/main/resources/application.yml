@@ -2,5 +2,5 @@ server:
   port: 8100
 
 producer-service:
-  url: localhost
+  host: localhost
   port: 8300
